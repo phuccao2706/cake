@@ -97,16 +97,16 @@
 		</nav>
 
 		<div class="container" id="banner">
-			<div class="jumbotron jumbotron-fluid text-light">
-	   	 		<h1 class="text-center border-bottom pb-2 mx-auto mb-0">The Art of French</h1>    
-	   	 		<h1 class="text-center pt-2">PROFITEROLE</h1>  
-	   	 		<h1 class="text-center">Patissenrie</h1>
+			<div class="jumbotron jumbotron-fluid">
+	   	 		<h1 class="border-bottom mb-0 text-warning border-warning mx-auto text-center" style="font-family: Parisienne">The Art of French</h1>    
+	   	 		<h1 class="text-warning text-center pt-2 " style="font-family: Interstate">PROFITEROLE</h1>  
+	   	 		<h1 class="text-warning text-center" style="font-family: Interstate">Patissenrie</h1>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
 		<div class="feature">
-			<h1 class="text-center">Feature</h1>
+			<h1 class="text-center text-warning"  style="font-family: Parisienne">Feature</h1>
 			<div id="slide-show" class="slide-show">
 				<?php foreach($data as $d){?>
 				<div class="sub-slide-show mx-2 position-relative">
@@ -129,33 +129,33 @@
 	<div class="container-fluid px-0">
 		<div id="story">
 			<div id="inner-story">
-				<h1 class="text-center text-warning">Our Story</h1>
+				<h1 class="text-center text-warning"  style="font-family: Parisienne">Our Story</h1>
 				<p class="text-light text-center">Donec sit amet volutpat turpis, ut congue augue. Integer pulvinar turpis id fermentum iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lobortis consequat erat non gravida. Nullam ante velit, malesuada et facilisis ac, porttitor eget tortor. Nulla facilisi. Etiam eu nibh in sapien molestie interdum ac non ligula. Curabitur venenatis quis metus iaculis ullamcorper. Ut lacinia vel libero at scelerisque. Sed tristique dignissim velit, eu feugiat sem efficitur et.</p>
 				<p class="text-light text-center">Nulla bibendum, tellus eget hendrerit elementum, enim tellus faucibus turpis, sit amet posuere felis diam egestas orci. Sed commodo arcu sit amet cursus egestas. Consectetur adipiscing elit. Maecenas tempor, ante ac ultrices congue, leo tellus vehicula mauris, ac aliquam arcu dui eget erat. Vivamus sagittis aliquam imperdiet. Integer auctor purus lectus, in fringilla nibh fringilla et.</p>
 			</div>
 		</div>
 	</div>
-
+	<br>
 	<div class="container">
 		<div id="service">
-			<h1 class="text-center text-warning">Service</h1>
+			<h1 class="text-center text-warning"  style="font-family: Parisienne">Service</h1>
 			<div class="row">
 				<div class="col-12 col-md-4 position-relative my-3">
 					<img class="position-relative" src="img/cart.jpg">
 					<div class="position-absolute service-title">
-						<a href="#"><h4 class="mb-0 text-light">Table Serving</h4></a>
+						<a href="#"><h4 class="mb-0 text-light" style="font-family: Parisienne">Table Serving</h4></a>
 					</div>
 				</div>
 				<div class="col-12 col-md-4 position-relative my-3">
 					<img class="position-relative" src="img/cart.jpg">
 					<div class="position-absolute service-title">
-						<a href="#"><h4 class="mb-0 text-light">Table Serving</h4></a>
+						<a href="#"><h4 class="mb-0 text-light" style="font-family: Parisienne">Table Serving</h4></a>
 					</div>
 				</div>
 				<div class="col-12 col-md-4 position-relative my-3">
 					<img class="position-relative" src="img/cart.jpg">
 					<div class="position-absolute service-title">
-						<a href="#"><h4 class="mb-0 text-light">Table Serving</h4></a>
+						<a href="#"><h4 class="mb-0 text-light"  style="font-family: Parisienne">Table Serving</h4></a>
 					</div>
 					
 				</div>
@@ -199,6 +199,7 @@
   	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#slide-show').slick({
