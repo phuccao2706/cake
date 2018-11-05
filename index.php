@@ -130,8 +130,8 @@
 		<div id="story">
 			<div id="inner-story">
 				<h1 class="text-center text-warning"  style="font-family: Parisienne">Our Story</h1>
-				<p class="text-light text-center">Donec sit amet volutpat turpis, ut congue augue. Integer pulvinar turpis id fermentum iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lobortis consequat erat non gravida. Nullam ante velit, malesuada et facilisis ac, porttitor eget tortor. Nulla facilisi. Etiam eu nibh in sapien molestie interdum ac non ligula. Curabitur venenatis quis metus iaculis ullamcorper. Ut lacinia vel libero at scelerisque. Sed tristique dignissim velit, eu feugiat sem efficitur et.</p>
-				<p class="text-light text-center">Nulla bibendum, tellus eget hendrerit elementum, enim tellus faucibus turpis, sit amet posuere felis diam egestas orci. Sed commodo arcu sit amet cursus egestas. Consectetur adipiscing elit. Maecenas tempor, ante ac ultrices congue, leo tellus vehicula mauris, ac aliquam arcu dui eget erat. Vivamus sagittis aliquam imperdiet. Integer auctor purus lectus, in fringilla nibh fringilla et.</p>
+				<p class="text-light text-center" style="font-family: Myriad Pro">Donec sit amet volutpat turpis, ut congue augue. Integer pulvinar turpis id fermentum iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lobortis consequat erat non gravida. Nullam ante velit, malesuada et facilisis ac, porttitor eget tortor. Nulla facilisi. Etiam eu nibh in sapien molestie interdum ac non ligula. Curabitur venenatis quis metus iaculis ullamcorper. Ut lacinia vel libero at scelerisque. Sed tristique dignissim velit, eu feugiat sem efficitur et.</p>
+				<p class="text-light text-center" style="font-family: Myriad Pro">Nulla bibendum, tellus eget hendrerit elementum, enim tellus faucibus turpis, sit amet posuere felis diam egestas orci. Sed commodo arcu sit amet cursus egestas. Consectetur adipiscing elit. Maecenas tempor, ante ac ultrices congue, leo tellus vehicula mauris, ac aliquam arcu dui eget erat. Vivamus sagittis aliquam imperdiet. Integer auctor purus lectus, in fringilla nibh fringilla et.</p>
 			</div>
 		</div>
 	</div>
