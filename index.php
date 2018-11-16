@@ -22,21 +22,21 @@
   	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
-	<div class="container-fluid bg-light d-md-flex d-none px-5 py-3">
+	<div class="container-fluid bg-light d-md-flex d-none px-5" id="contact-bar">
 	    <div class="my-auto">
-	    	<i style="" class="fas fa-phone fa-2x ml-3"></i>
+	    	<img src="img/phone.png" class="social ml-3">
 	    	<p class="d-inline ml-1">0909 759 447</p>
-	    	<i class="fas fa-map-marked-alt fa-2x ml-3"></i>
+	    	<img src="img/map.png" class="social ml-3">
 	    	<p class="d-inline ml-1">Lorem ipsum dolor sit amet.</p>
 	    </div>
 	    <div class="my-auto ml-auto">
-	    	<a href=""><i class="fas fa-facebook fa-2x brand"></i></a>
-	    	<a href=""><i class="fas fa-google-plus-g fa-2x brand"></i></a>
-	    	<a href=""><i class="fas fa-twitter fa-2x brand"></i></a>
-	    	<a href=""><i class="fas fa-linkedin-in fa-2x brand"></i></a>
+	    	<a href=""><img src="img/fb.png" class="social mx-md-2"></a>
+	    	<a href=""><img src="img/g+.png" class="social mx-md-2"></a>
+	    	<a href=""><img src="img/tw.png" class="social mx-md-2"></a>
+	    	<a href=""><img src="img/in.png" class="social mx-md-2"></a>
 	    </div>
 	</div>
-	<nav class="navbar navbar-dark navbar-expand-sm d-block d-md-none bg-dark">
+	<nav class="navbar navbar-dark navbar-expand-sm d-block d-md-none bg-dark py-0">
 		  	<div class="container-fluid">
 			    <button class="navbar-toggler" data-target="#collapsenav" aria-controls="collapsenav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" type="button">
 			      	<span class="navbar-toggler-icon"></span>
@@ -66,11 +66,8 @@
 		  	</div>
 		</nav>
 	<div id="banner-parent" class="">
-		<nav class="navbar navbar-dark navbar-expand-sm d-none d-md-block" id="menu-bar">
+		<nav class="navbar navbar-dark navbar-expand-sm d-none d-md-block py-0" id="menu-bar">
 		  	<div class="container-fluid">
-			    <button class="navbar-toggler" data-target="#collapsenav" aria-controls="collapsenav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" type="button">
-			      	<span class="navbar-toggler-icon"></span>
-			    </button>
 			    <div class="collapse navbar-collapse" id="collapsenav">
 			      	<ul class="nav navbar-nav ml-auto mr-3 text-light ">
 			     	 	<li class="nav-item my-auto">
@@ -98,22 +95,22 @@
 
 		<div class="container" id="banner">
 			<div class="jumbotron jumbotron-fluid">
-	   	 		<h1 class="border-bottom mb-0 text-warning border-warning mx-auto text-center" style="font-family: Parisienne">The Art of French</h1>    
-	   	 		<h1 class="text-warning text-center pt-2 " style="font-family: Interstate">PROFITEROLE</h1>  
-	   	 		<h1 class="text-warning text-center" style="font-family: Interstate">Patissenrie</h1>
+	   	 		<h1 class="border-bottom mb-0 mx-auto text-center " id="title" style="font-family: Parisienne">The Art of French</h1>
+	   	 		<h1 class="text-center pt-2 " id="title" style="font-family: Interstate">PROFITEROLE</h1>  
+	   	 		<h1 class="text-center" id="title" style="font-family: Interstate">Patissenrie</h1>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div class="feature">
-			<h1 class="text-center text-warning"  style="font-family: Parisienne">Feature</h1>
-			<div id="slide-show" class="slide-show">
+		<div class="feature" id="slide">
+			<h1 class="text-center" id="title" style="font-family: Parisienne">Feature</h1>
+			<div id="slide-show" class="slide-show" style="font-family: Myriad Pro">
 				<?php foreach($data as $d){?>
 				<div class="sub-slide-show mx-2 position-relative">
 					<img class="w-100" src="img/<?php echo $d->image?>" >
 					<div class="name-slide-show position-absolute w-100 text-uppercase fixed-bottom">
 						<div class="d-inline-block pl-3 py-1" id="slide-name">
-							<p class="text-warning m-0"><?php echo $d->name?></p>
+							<p class=" m-0" id="title"><?php echo $d->name?></p>
 							<p class="m-0">$ <?php echo $d->price?></p>
 						</div>
 						<div class="slide-cart pr-3 d-inline-block float-right"><a href="#"><span class="fas fa-shopping-cart fa-2x "></span></a></div>
@@ -129,16 +126,16 @@
 	<div class="container-fluid px-0">
 		<div id="story">
 			<div id="inner-story">
-				<h1 class="text-center text-warning"  style="font-family: Parisienne">Our Story</h1>
-				<p class="text-light text-center" style="font-family: Myriad Pro">Donec sit amet volutpat turpis, ut congue augue. Integer pulvinar turpis id fermentum iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lobortis consequat erat non gravida. Nullam ante velit, malesuada et facilisis ac, porttitor eget tortor. Nulla facilisi. Etiam eu nibh in sapien molestie interdum ac non ligula. Curabitur venenatis quis metus iaculis ullamcorper. Ut lacinia vel libero at scelerisque. Sed tristique dignissim velit, eu feugiat sem efficitur et.</p>
-				<p class="text-light text-center" style="font-family: Myriad Pro">Nulla bibendum, tellus eget hendrerit elementum, enim tellus faucibus turpis, sit amet posuere felis diam egestas orci. Sed commodo arcu sit amet cursus egestas. Consectetur adipiscing elit. Maecenas tempor, ante ac ultrices congue, leo tellus vehicula mauris, ac aliquam arcu dui eget erat. Vivamus sagittis aliquam imperdiet. Integer auctor purus lectus, in fringilla nibh fringilla et.</p>
+				<h1 class="text-center" id="title" style="font-family: Parisienne">Our Story</h1>
+				<p class="text-light text-center font-italic" style="font-family: Myriad Pro">Donec sit amet volutpat turpis, ut congue augue. Integer pulvinar turpis id fermentum iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lobortis consequat erat non gravida. Nulla facilisi. Etiam eu nibh in sapien molestie interdum ac non ligula. Curabitur venenatis quis metus iaculis ullamcorper. Ut lacinia vel libero at scelerisque. Sed tristique dignissim velit, eu feugiat sem efficitur et.</p>
+				<p class="text-light text-center font-italic" style="font-family: Myriad Pro">Nulla bibendum, tellus eget hendrerit elementum, enim tellus faucibus turpis, sit amet posuere felis diam egestas orci. Sed commodo arc Consectetur adipiscing elit. Maecenas tempor, ante ac ultrices congue, leo tellus vehicula mauris, ac aliquam arcu dui eget erat. Integer auctor purus lectus, in fringilla nibh fringilla et.</p>
 			</div>
 		</div>
 	</div>
 	<br>
 	<div class="container">
 		<div id="service">
-			<h1 class="text-center text-warning"  style="font-family: Parisienne">Service</h1>
+			<h1 class="text-center" id="title" style="font-family: Parisienne">Service</h1>
 			<div class="row">
 				<div class="col-12 col-md-4 position-relative my-3">
 					<img class="position-relative" src="img/cart.jpg">
@@ -168,28 +165,44 @@
 	<div class="container-fluid">
 		<div id="footer">
 			<div class="row">
-				<div class="col-md-7 col-12 bg-light px-0">
-					<div class="my-md-5 my-3 ml-5">
-				    	<a href=""><i class="fas fa-facebook fa-3x brand"></i></a>
-				    	<a href=""><i class="fas fa-google-plus-g fa-3x brand"></i></a>
-				    	<a href=""><i class="fas fa-twitter fa-3x brand"></i></a>
-				    	<a href=""><i class="fas fa-linkedin-in fa-3x brand"></i></a>
+				<div class="col-md-6 col-12 bg-light px-0">
+					<div class=" my-4 ml-5">
+				    	<a href=""><img src="img/fb.png" class="social-footer mr-2 mr-md-3"></a>
+				    	<a href=""><img src="img/g+.png" class="social-footer mx-2 mx-md-3"></a>
+				    	<a href=""><img src="img/tw.png" class="social-footer mx-2 mx-md-3"></a>
+				    	<a href=""><img src="img/in.png" class="social-footer mx-2 mx-md-3"></a>
 	    			</div>
-	    			<div class="ml-5 mt-md-5 mt-3 mb-3 position-relative">
-				    	<i class="fas fa-map-marked-alt fa-3x"></i>
-				    	<p class="d-inline ml-3 mt-3 pr-1 pr-md-0 position-absolute">Lorem ipsum dolor sit amet dolor sit ame dolor si.</p>
+	    			<table class="ml-5">
+	    				<tr>
+	    					<td><img src="img/map.png" class="social mb-3"></td>
+	    					<td><p class="d-inline ml-3 mt-3 pr-1 pr-md-0">Lorem ipsum dolor sit amet dolor sit ame dolor si.</p></td>
+	    				</tr>
+	    				<tr>
+	    					<td><img src="img/phone.png" class="social"></td>
+	    					<td><p class="d-inline ml-3 mt-3 pr-1 pr-md-0">0909 759 447</p></td>
+	    				</tr>
+	    				<tr>
+	    					<td><img src="img/mail.png" class="social my-3"></td>
+	    					<td><p class="d-inline ml-3 mt-3 pr-1 pr-md-0">Lorem ipsum dolor sit amet.</p></td>
+	    				</tr>
+	    			</table>
+
+
+	    			<!-- <div class="ml-5 mt-md-5 mt-3 mb-3">
+				    	<img src="img/map.png" class="social">
+				    	<p class="d-inline ml-3 mt-3 pr-1 pr-md-0">Lorem ipsum dolor sit amet dolor sit ame dolor si.</p>
 				    </div>
 	    			<div class="ml-5 mb-3 position-relative">
-				    	<i style="" class="fas fa-phone fa-3x"></i>
-				    	<p class="d-inline ml-3 mt-3 pr-1 pr-md-0 position-absolute">0909 759 447</p>
+				    	<img src="img/phone.png" class="social">
+				    	<p class="d-inline ml-3 mt-3 pr-1 pr-md-0">0909 759 447</p>
 				    </div>
 				    <div class="ml-5 mb-md-0 mb-3 position-relative">
-				    	<i class="far fa-envelope fa-3x"></i>
-				    	<p class="d-inline ml-3 mt-3 pr-1 pr-md-0 position-absolute">Lorem ipsum dolor sit amet.</p>
-				    </div>
+				    	<img src="img/mail.png" class="social">
+				    	<p class="d-inline ml-3 mt-3 pr-1 pr-md-0">Lorem ipsum dolor sit amet.</p>
+				    </div> -->
 				</div>
 
-				<div class="col-md-5 col-12 px-0">
+				<div class="col-md-6 col-12 px-0">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4002459485146!2d106.69620561533434!3d10.780625862062854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f37cade9cef%3A0x89a11cd90293c6cc!2sDiamond+Plaza!5e0!3m2!1svi!2s!4v1540638268724" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
@@ -203,19 +216,19 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#slide-show').slick({
-			  	slidesToShow: 5,
+			  	slidesToShow: 4,
 			  	slidesToScroll: 1,
-			  	autoplay: false,
+			  	autoplay: true,
 			  	autoplaySpeed: 1000,
-			  	// variableWidth: true,
+			  	arrows: true,
 			  	responsive: [
 			    {
 			      	breakpoint: 1024,
 			      	settings: {
 				        slidesToShow: 1,
 					  	slidesToScroll: 1,
-					  	autoplay: false,
-					  	// variableWidth: true,
+					  	autoplay: true,
+					  	arrows: false,
 					  	autoplaySpeed: 1000
 			    	}
 			    }

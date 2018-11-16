@@ -1,208 +1,9 @@
-/*.menu{
-  background-image: url("img/bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 1000px;
-  max-height: 700px;
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+@font-face{
+  font-family: 'Interstate';
+  src : url('font/Interstate-Bold.woff') format('woff');
 }
 
-.sub-menu{
-  background: rgba(0, 0, 0, 0.6);
-  width: 100% !important;
-  
-
-}
-
-.menu ul li a{
-  color: #cccccc !important;
-}
-
-.menu ul li a:hover{
-  background-color: #e7e7e7 !important;
-  color: #262626 !important;
-}
-
-
-.sub-menu ul li:first-child a{
-  color: #262626 !important;
-}
-
-.sub-menu ul li:last-child a{
-  padding: 0px !important;
-}
-
-.menu ul{
-    padding-right: 70px !important;
-}
-
-.menu ul li img{
-    width: 30px;
-    height: auto;
-    margin-top: 10px;
-}
-
-.info-bar{
-  background: white;
-  margin-bottom: 0px !important;
-  border-bottom: 0px !important;
-}
-
-.info-bar ul li p{
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-#phone{
-  margin-top: 10px;
-  width: 23px;
-  height: auto;
-  margin-left: 50px;
-} 
-
-#map{
-  width: 17px;
-  height: auto;
-  margin-top: 10px;
-  margin-left: 50px;
-}
-
-.info-bar-sm-logo{
-  height: 49px !important;
-  width: auto;
-}
-
-.info-bar-sm{
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-}
-
-.info-bar-group{
-  margin-right: 50px !important;
-}
-.test{
-  max-width: 100%;
-  width: 100%;
-  background-image: url("img/bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner{
-  text-align: center;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.6) !important;
-  color: #bf8500 !important;
-  position: absolute ;
-  bottom: 200px;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
-}
-
-.title{
-  color: #bf8500 !important;
-  text-align: center !important;
-}
-
-#slide-show img{
-  width: 100%;
-}
-.slide-show{
-
-}
-.sub-slide-show{
-    position: relative;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.name-slide-show{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
-}
-
-.name-slide-show p:first-child{
-  color: #bf8500;
-}
-
-.name-slide-show p{
-  margin: 0;
-}
-
-.name-slide-show div{
-  display: inline-block;
-  margin-top: 5px !important;
-  margin-left: 10px !important;
-  font-size: 18px;
-}
-
-.name-slide-show img{
-  display: inline-block;
-  width: 50px !important;
-  margin: 5px 8px 5px 5px;
-}
-
-.wrap-text{
-  background-image: url("img/cinamon.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 920px;/*
-  position: relative;
-}
-
-.story p{
-  width: 60%;
-  color: white;
-  font-size: 32px;
-  margin: auto !important;
-  position: absolute !important;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  display: block;
-}
-
-.wrap-text div{
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-}
-
-.wrap-text h1{
-  padding-top: 200px;
-}
-
-.body{
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-}
-
-.feature{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.service i{
-  width: 40%;
-  height: : auto;
-  margin:0 auto;
-  display: block;
-}
-
-.service i svg{
-  width: 40% !important;
-  height: 40% !important;
-}
-.service-img div{
-}
-
-.service{
-}*/
 .brand{
   font-family: "Font Awesome 5 Brands" !important;
   font-weight: 400 !important;
@@ -232,7 +33,7 @@ a { color: black !important; }
 }
 
 .jumbotron h1:first-child{
-    width: 95%;
+    width: 75%;
   }
 
 .jumbotron h1{
@@ -287,7 +88,55 @@ a { color: black !important; }
 
 }
 
+#title{
+  color: #bf8500;
+}
+
+#banner h1{
+  border-color : #bf8500 !important;
+}
+
+.slick-next{
+    background-image: url(img/next.png);
+    background-position: center ;
+    background-repeat: no-repeat ;
+    left: 100% !important;
+    height: 100% !important;
+    width: 80px !important;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.slick-prev{
+  background-image: url(img/pre.png) !important;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  height: 100% !important;
+  width: 80px !important;
+  background-color: transparent;
+      left: -99px !important;
+}
+
+.social{
+  height: 40px !important;
+}
+
+.social-footer{
+  height: 50px !important;
+}
+
 @media(min-width: 768px){
+  .social-footer{
+    height: 60px !important;
+  }
+
+  #story{
+  background-image: url(img/cinamon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+
   #banner-parent{
     background-image: url(img/bg1.jpg);
     background-size: cover;
@@ -303,7 +152,7 @@ a { color: black !important; }
 
   }
   .jumbotron h1:first-child{
-    width: 26% !important;
+    width: 45% !important;
   } 
   .jumbotron h1{
   font-size: 2.5rem !important;
@@ -313,7 +162,7 @@ a { color: black !important; }
   }
 
   #inner-story{
-    padding: 150px 300px !important;
+    padding: 150px 150px !important;
   }
 
   #inner-story p{
@@ -333,13 +182,14 @@ a { color: black !important; }
   .service-title{
     width: 68% !important;
   }
-}
 
-
-
-/*@media(max-width: 768px){
-  #banner-parent{
-    height: 300px;
-    background-position: center;
+  #contact-bar{
+      padding-top: 4px;
+      padding-bottom: 4px;
   }
-}*/
+
+  #slide{
+    padding-right: 150px !important;
+    padding-left: 150px !important;
+  }
+}
